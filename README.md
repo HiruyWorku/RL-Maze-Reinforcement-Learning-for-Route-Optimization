@@ -1,1 +1,1 @@
-# JuniorIS
+# CUDA Accelerated reinforcement learning.
