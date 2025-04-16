@@ -5,7 +5,7 @@ This project leverages reinforcement learning (RL) to tackle complex route optim
 ## Overview
 
 - **Objective:**  
-  Learn optimal routing strategies in dynamic, grid-based environments while minimizing computational costs.
+  Learn optimal routing strategies in dynamic, grid-based environments while minimizing computational costs
 
 - **Approach:**  
   - **Environment:**  
