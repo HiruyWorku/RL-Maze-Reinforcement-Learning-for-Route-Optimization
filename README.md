@@ -42,6 +42,3 @@ These scripts find the optimal path from the start to the goal in a 5x5 maze and
    - Modify the maze or agent behavior.
    - Compare results across RL and traditional algorithms.
    - Experiment with CUDA acceleration using `CUDA_acceleration.py`.
-
-## File Structure
-JUNIORIS/ ├── Traditional Methods/ │ ├── A*_solver.py │ ├── DFS_solver.py │ └── Dijkstra_solver.py ├── CUDA_acceleration.py ├── junior_IS_propsal.pdf ├── MDP_introduction.ipynb ├── off_policy_control_complete.py ├── on_policy_control_complete.py ├── policy_iteration_complete.py └── README.md
