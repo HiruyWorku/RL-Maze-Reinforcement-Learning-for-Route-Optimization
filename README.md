@@ -1,30 +1,47 @@
 # CUDA-Accelerated Reinforcement Learning for Route Optimization
 
-This project leverages reinforcement learning (RL) to tackle complex route optimization challenges in logistics, transportation, and navigation systems. By designing a custom OpenAI Gym environment and training an RL agent using methods such as PPO or DQN with CUDA-accelerated PyTorch—we aim to develop efficient, adaptive routing strategies.
+This project explores reinforcement learning (RL) as a method for solving route optimization tasks within a 5x5 maze environment. It compares RL-based solutions with traditional algorithms such as Dijkstra's and A* and includes CUDA acceleration for potential speed-up.
 
 ## Overview
 
 - **Objective:**  
-  Learn optimal routing strategies in dynamic, grid-based environments while minimizing computational costs
+  Learn adaptive, efficient routing strategies in a grid-based environment using reinforcement learning.
 
 - **Approach:**  
   - **Environment:**  
-    A custom Gym environment simulates various route optimization scenarios, including obstacles and dynamic traffic conditions.
-  - **RL Model:**  
-    The agent is trained using algorithms like PPO or DQN (via Stable-Baselines3) to navigate the environment and optimize routes.
-  - **Acceleration:**  
-    A performance comparison is made between CPU and CUDA-powered GPU implementations to assess training efficiency and model accuracy.
-  - **Demo:**  
-    A simplified 5x5 maze example introduces the fundamentals of the Markov Decision Process and demonstrates core RL concepts.
+    A custom 5x5 maze implemented using a Gym-style environment.
+  - **Traditional Algorithms:**  
+    Implementations of Dijkstra’s, A*, and DFS for pathfinding benchmark comparisons.
+  - **RL Techniques:**  
+    Reinforcement learning models built using value iteration, on-policy, and off-policy Monte Carlo methods.
+  - **CUDA Acceleration:**  
+    Simple CUDA-based parallelized example included to demonstrate GPU benefits in RL workflows.
+
+## Traditional Methods
+
+The following classical pathfinding algorithms are implemented in the `Traditional Methods/` directory:
+- `A*_solver.py`
+- `Dijkstra_solver.py`
+- `DFS_solver.py`
+
+These scripts find the optimal path from the start to the goal in a 5x5 maze and are used to benchmark RL agents.
 
 ## Getting Started
 
-1. **Install Dependencies:**  
-   Ensure Python is installed and run:
-   ```bash
-   pip install gym==0.23.0 stable-baselines3 torch
-2. Run the Notebook:
-Open the provided Colab notebook to explore the introductory 5x5 maze example and the broader RL model implementation.
+1. **Install Dependencies:**
 
-3. Experiment:
-Modify the Gym environment and RL parameters to test different routing scenarios and compare CPU vs. GPU training performance.
+    ```bash
+    pip install gym==0.23.0 pygame stable-baselines3 torch
+    ```
+
+2. **Run the Notebook or Python Scripts:**
+   - Try out the `MDP_introduction.ipynb` notebook for an introduction to value iteration and policy evaluation.
+   - Explore `on_policy_control_complete.py` and `off_policy_control_complete.py` to see RL agents in action.
+
+3. **Experiment:**
+   - Modify the maze or agent behavior.
+   - Compare results across RL and traditional algorithms.
+   - Experiment with CUDA acceleration using `CUDA_acceleration.py`.
+
+## File Structure
+JUNIORIS/ ├── Traditional Methods/ │ ├── A*_solver.py │ ├── DFS_solver.py │ └── Dijkstra_solver.py ├── CUDA_acceleration.py ├── junior_IS_propsal.pdf ├── MDP_introduction.ipynb ├── off_policy_control_complete.py ├── on_policy_control_complete.py ├── policy_iteration_complete.py └── README.md
