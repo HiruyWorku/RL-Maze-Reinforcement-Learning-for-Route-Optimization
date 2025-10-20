@@ -42,3 +42,5 @@ These scripts find the optimal path from the start to the goal in a 5x5 maze and
    - Modify the maze or agent behavior.
    - Compare results across RL and traditional algorithms.
    - Experiment with CUDA acceleration using `CUDA_acceleration.py`.
+  
+<img width="1274" height="715" alt="RLjis" src="https://github.com/user-attachments/assets/30c5cd86-2c38-48c3-92e2-0e85a9080137" />
